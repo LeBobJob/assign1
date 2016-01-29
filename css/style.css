@@ -24,6 +24,12 @@ p {
   font-size: 2em;
   text-align: center;
   position: relative; }
+  p h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 8em;
+    color: whitesmoke;
+    position: relative; }
 
 h2 {
   text-align: center;

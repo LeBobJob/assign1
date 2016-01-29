@@ -5,6 +5,8 @@ $color: whitesmoke;
 $zero: 0;
 $ABSOLUTELY: absolute;
 $RELATIVELY: relative;
+$coloropaq: opacify($color, 0);
+$colorlighten:lighten($color, 50);
 
 //css
 @font-face {
@@ -25,8 +27,8 @@ body {
 
 #bg {
 
-}
-#bg img {
+    
+    img {
 	z-index: -1;
     position: $ABSOLUTELY;
     top:$zero;
@@ -34,6 +36,8 @@ body {
     width:100%;
     height:100vh;
 }
+}
+
 
 #page-wrap { 
     margin:5%;
@@ -45,16 +49,21 @@ p {
     font-size: 2em;
     text-align: $mid;
     position: $RELATIVELY;
-    
+    h2 {
+        text-align: $mid;
+        margin: $zero;
+        font-size:8em;
+        color:$color;
+        position: $RELATIVELY;
+    }
 }
-
 
 h2 {
     text-align: $mid;
     margin: $zero;
     font-size:8em;
     color:$color;
-    position: relative;
+    position: $RELATIVELY;
 }
 
 #nav {
