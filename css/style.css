@@ -28,6 +28,9 @@ p {
     text-align: center;
     margin: 0;
     font-size: 8em;
+    -webkit-color: whitesmoke;
+    -moz-color: whitesmoke;
+    -ms-color: whitesmoke;
     color: whitesmoke;
     position: relative; }
 
@@ -35,12 +38,18 @@ h2 {
   text-align: center;
   margin: 0;
   font-size: 8em;
+  -webkit-color: whitesmoke;
+  -moz-color: whitesmoke;
+  -ms-color: whitesmoke;
   color: whitesmoke;
   position: relative; }
 
 #nav {
   text-align: center;
   margin: auto;
+  -webkit-color: whitesmoke;
+  -moz-color: whitesmoke;
+  -ms-color: whitesmoke;
   color: whitesmoke;
   width: 60%; }
 
@@ -49,6 +58,9 @@ h2 {
   text-align: center;
   float: left;
   font-size: 1em;
+  -webkit-background-color: #be5f5f;
+  -moz-background-color: #be5f5f;
+  -ms-background-color: #be5f5f;
   background-color: #be5f5f;
   margin: auto;
   padding: 3%;

@@ -7,6 +7,23 @@ $ABSOLUTELY: absolute;
 $RELATIVELY: relative;
 $coloropaq: opacify($color, 0);
 $colorlighten:lighten($color, 50);
+$bg: #be5f5f;
+$bgopaq: opacify($bg, 0);
+
+@mixin color($coloropaq){
+    -webkit-color: $coloropaq;
+    -moz-color: $coloropaq;
+    -ms-color: $coloropaq;
+    color: $coloropaq;
+}
+    
+@mixin background-color($bgopaq){
+    -webkit-background-color: $bgopaq;
+    -moz-background-color: $bgopaq;
+    -ms-background-color: $bgopaq;
+    background-color: $bgopaq;
+}
+
 
 //css
 @font-face {
@@ -53,7 +70,7 @@ p {
         text-align: $mid;
         margin: $zero;
         font-size:8em;
-        color:$color;
+        @include color($coloropaq);
         position: $RELATIVELY;
     }
 }
@@ -62,14 +79,14 @@ h2 {
     text-align: $mid;
     margin: $zero;
     font-size:8em;
-    color:$color;
+    @include color($coloropaq);
     position: $RELATIVELY;
 }
 
 #nav {
     text-align: $mid;
     margin: auto;
-    color:$color;
+    @include color($coloropaq);
     width:60%;
     
 }
@@ -78,7 +95,7 @@ h2 {
     text-align: $mid;
     float:left;
     font-size: 1em;
-    background-color: #be5f5f;
+    @include background-color($bgopaq);
     margin: auto;
     padding: 3%;
     margin-left: 2%;
