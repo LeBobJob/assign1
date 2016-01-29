@@ -1,107 +1,79 @@
 @font-face {
-	font-family: 'archivo_blackregular';
-	src: url('fonts/archivoblack/archivoblack-regular-webfont.eot');
-	src: url('fonts/archivoblack/archivoblack-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	url('fonts/archivoblack/archivoblack-regular-webfont.woff') format('woff'),
-	url('fonts/archivoblack/archivoblack-regular-webfont.ttf') format('truetype'),
-	url('fonts/archivoblack/archivoblack-regular-webfont.svg#archivo_blackregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
+  font-family: "archivo_blackregular";
+  src: url("fonts/archivoblack/archivoblack-regular-webfont.eot");
+  src: url("fonts/archivoblack/archivoblack-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/archivoblack/archivoblack-regular-webfont.woff") format("woff"), url("fonts/archivoblack/archivoblack-regular-webfont.ttf") format("truetype"), url("fonts/archivoblack/archivoblack-regular-webfont.svg#archivo_blackregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
-	margin:0;
-	font-family: 'archivo_blackregular', Impact, Arial, sans-serif;
-}
+  margin: 0;
+  font-family: "archivo_blackregular", Impact, Arial, sans-serif; }
 
-#bg {
-
-}
 #bg img {
-	z-index: -1;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-}
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
 
-#page-wrap { 
-    margin:5%;
-}
+#page-wrap {
+  margin: 5%; }
 
-
-p { 
-	color:whitesmoke;
-    font-size: 2em;
-    text-align: center;
-    position: relative;
-    
-}
-
+p {
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  position: relative; }
 
 h2 {
-    text-align: center;
-    margin: 0;
-    font-size:8em;
-    color:whitesmoke;
-    position: relative;
-}
+  text-align: center;
+  margin: 0;
+  font-size: 8em;
+  color: whitesmoke;
+  position: relative; }
 
 #nav {
-    text-align: center;
-    margin: auto;
-    color:whitesmoke;
-    width:60%;
-    
-}
+  text-align: center;
+  margin: auto;
+  color: whitesmoke;
+  width: 60%; }
+
 .button {
-    display: inline;
-    text-align: center;
-    float:left;
-    font-size: 1em;
-    background-color: #be5f5f;
-    margin: auto;
-    padding: 3%;
-    margin-left: 2%;
-    margin-top: 1%;
-    position: relative;
-	
-}
+  display: inline;
+  text-align: center;
+  float: left;
+  font-size: 1em;
+  background-color: #be5f5f;
+  margin: auto;
+  padding: 3%;
+  margin-left: 2%;
+  margin-top: 1%;
+  position: relative; }
 
 .progress {
-	position: relative;
-    z-index: 3;
-    width:100%;
-    height:8px;
-    background-color: whitesmoke;
-}
-
-h2, p {
-	
-}
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 8px;
+  background-color: whitesmoke; }
 
 /* media queries */
 @media (max-width: 830px) {
-	h2 {
-		font-size: 120px;
-		line-height: 106px;
-	}
-	p {
-		font-size: 26px;
-	}
-}
+  h2 {
+    font-size: 120px;
+    line-height: 106px; }
 
+  p {
+    font-size: 26px; } }
 @media (max-width: 700px) {
-	#page-wrap { 
-		margin-top: 20px
-	}
-	h2 {
-		font-size: 90px;
-		line-height: 80px;
-	}
-	p {
-		font-size: 24px;
-	}
-}
+  #page-wrap {
+    margin-top: 20px; }
 
+  h2 {
+    font-size: 90px;
+    line-height: 80px; }
+
+  p {
+    font-size: 24px; } }
+
+/*# sourceMappingURL=style.css.map */
