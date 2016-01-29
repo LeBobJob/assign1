@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Into The Wind</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="progress"></div>
+    <div id="page-wrap">
+        <h2 id="into">INTO</h2>
+        <h2 id="theWind">THE WIND</h2>
+        <p id="content">Wind power, as an alternative to fossil fuels, is plentiful, renewable, widely distributed, and clean. The effects on the environment are generally less problematic than those from other power sources.  In 2010 wind energy production was growing rapidly at more than 25%&nbsp;per&nbsp;annum.</p> 
+        <div id="nav">
+            <div class="button">Is Wind Right for You</div>
+            <div class="button">Cost Savings Calculator</div>
+            <div class="button">Find a Local Wind Expert</div>
+        </div>
+
+    </div>
+    
+    <div id="bg">
+        <img src="images/background_wind_cropped.jpg">
+    </div>
+ 
+<!-- load scripts after dom has been rendered -->
+
+<script src="js/gsap/TweenMax.js"></script>
+<script src="js/jquery/jquery-1.11.3.js"></script>
+<script src="js/gsap/TimelineLite.js"></script>
+  
+<!-- add your own script -->
+<script>
+    $(document).ready(function(){
+    /*the variables*/
+    var $pageWrap = $("#page-wrap");
+    var $button = $(".button");
+    var $nav = $("#nav");
+    var $bg = $("#bg");
+    var $progress = $(".progress");
+    var $into = $("#into");
+    var $theWind = $("#theWind");
+    var $content = $("#content");
+    var timeline;
+        
+    /*the action*/
+        CSSPlugin.defaultTransformPerspective = 800;
+        timeline = new TimelineLite();
+        timeline.from($bg, .5, {opacity:0, delay:0.5}, "+=.5")
+        .from($into, .5, {left:-300, opacity:0, ease:Back.easeOut}, "+=.5")
+        .from($theWind, .5, {left:1000, opacity:0, ease:Back.easeOut}, "+=.5")
+        .from($content, .5, {opacity:0, top:1000, ease:Back.easeOut}, "+=.5")
+        .from($button, .5, {opacity:0, transformOrigin:"center top", rotationX:-90, ease:Linear.easeNone}, "+=.5")
+        .from($progress, timeline.duration(), {scaleX:0, transformOrigin: "left", ease:Linear.easeNone}, 0)
+        .to($progress, .2, {opacity:0, top:-8});
+    
+    
+    /*simple sequence, tweenmax will help*/
+    
+    
+    
+    
+    
+    
+    });
+    
+    
+</script>
+</body>
+</html>
